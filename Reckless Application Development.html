@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reckless Application Development</title>
+
+  <style>
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+background:#10001C;
+color:white;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI', sans-serif;
+scroll-behavior:smooth;
+}
+    nav{
+      position:fixed;
+      top:0;
+      width:100%;
+      padding:18px;
+      display:flex;
+      justify-content:center;
+      gap:30px;
+      background:rgba(15,23,42,0.9);
+	background: #10001C;
+      backdrop-filter:blur(10px);
+      z-index:1000;
+      box-shadow:0 4px 15px rgba(0,0,0,0.25);
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#130017;
+    }
+    section{
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:120px 20px;
+    }
+    .hero{
+      background:
+      linear-gradient(rgba(15,23,42,0.75),rgba(15,23,42,0.75)),
+      url('https://i.pinimg.com/736x/bd/85/9f/bd859f9b54f46c28f6ce45514db3be27.jpg');
+      background-size:cover;
+      background-position:center;
+    }
+    .card{
+      width:90%;
+      max-width:1050px;
+      background:#1a002e;
+      border-radius:25px;
+      padding:45px;
+      overflow:hidden;
+      text-align:center;
+      box-shadow:0 10px 35px rgba(0,0,0,0.3);
+      animation:fade 1s ease;
+    }
+    h1{
+      font-size:3.2rem;
+      margin-bottom:20px;
+      color:#FFFFFF;
+    }
+
+    h2{
+      font-size:2rem;
+      margin-bottom:20px;
+      color:#FFFFFF;
+    }
+h3
+{
+	text-align: center;
+      	color:#FFFFFF;
+}
+
+    p{
+      line-height:1.8;
+      margin-bottom:25px;
+      color:#FFFFFF;
+    }
+    .btn{
+      display:inline-block;
+      padding:14px 30px;
+      border-radius:30px;
+      background:#9800A6;
+      color:#FFFFFF;
+      text-decoration:none;
+      font-weight:bold;
+      transition:0.3s;
+
+    }
+
+    .btn:hover{
+      transform:scale(1.05);
+      background:#660073;
+    }
+    .contenedor{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:25px;
+      margin-top:25px;
+    }
+img
+{
+  width:550px;
+  height:auto;
+  text-align: center;
+}
+
+    .box{
+      width:280px;
+      background:#10001C;
+      border-radius:20px;
+      padding:25px;
+      transition:0.3s;
+      box-shadow:0 5px 15px rgba(0,0,0,0.25);
+    }
+    .box img{
+      width:100%;
+      border-radius:15px;
+      margin-bottom:15px;
+    }
+
+    .box h3
+{
+      color:#10001C;
+      margin-bottom:12px;
+}
+      input, textarea
+{
+      width:100%;
+      padding:14px;
+      margin-top:12px;
+      border:none;
+      border-radius:12px;
+      background:#10001C;
+      color:white;
+      outline:none;
+    }
+
+    textarea{
+      resize:none;
+      height:120px;
+    }
+
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Nuestros Servicios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="inicio" class="hero">
+    <div class="card">
+      <img src="logo.png">
+      <p></p>
+      <a href="#servicios" class="btn">
+        Explorar pagina
+      </a>
+    </div>
+  </section>
+
+<section id="servicios">
+  <div class="card">
+    <h1>Nuestros Servicios</h1>
+
+<a href="aplicaciones.html" class="link-box">
+    <div class="contenedor">
+        <div class="box">
+          <img src="https://th.bing.com/th/id/OIP.OihdgsvMSfJ2iBhTzZJq3wHaDt?w=305&h=174&c=7&r=0&o=7&pid=1.7&rm=3">
+          <h2>Aplicaciones Móviles</h2>
+          <p>
+            Ver más 
+          </p>
+        </div>
+      </a>
+
+<a href="desarrollo.html" class="link-box">
+        <div class="box">
+          <img src="https://th.bing.com/th/id/OIP.40-MLRVX3HTvzIzNlaSaQQHaDt?w=304&h=180&c=7&r=0&o=7&pid=1.7&rm=3">
+          <h2>Desarrollo Web</h2>
+          <p>
+            Ver más 
+          </p>
+        </div>
+      </a>
+
+<a href="diseño.html" class="link-box">
+        <div class="box">
+          <img src="https://cdn.melhoreshospedagem.com/wp/wp-content/uploads/2020/12/o-que-e-html-e-como-ele-funciona-1000x563.jpg">
+          <h2>Diseños en HTML</h2>
+          <p>
+            Ver más 
+          </p>
+        </div>
+      <a href="#contacto" class="btn">
+	Contacto
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<section id="contacto">
+
+  <div class="card">
+
+    <h2>Contáctanos</h2>
+
+    <p>
+      Email: rad@outlook.com <br>
+      Teléfono: +52 55 1234 5678
+    </p>
+
+    <form id="contactForm">
+
+      <input 
+      type="text" 
+      id="nombre"
+      placeholder="Tu nombre"
+      required>
+
+      <input 
+      type="email" 
+      id="correo"
+      placeholder="Tu correo"
+      required>
+
+      <textarea 
+      id="mensaje"
+      placeholder="Escribe tu mensaje"
+      required></textarea>
+
+      <br><br>
+
+      <button type="submit" class="btn">
+        Enviar
+      </button>
+
+    </form>
+
+    <p id="respuesta"></p>
+
+  </div>
+
+</section>
+
+
+<script>
+
+const formulario = document.getElementById("contactForm");
+
+formulario.addEventListener("submit", function(event){
+
+  event.preventDefault();
+
+  document.getElementById("respuesta").innerHTML =
+  "✅ Mensaje enviado correctamente";
+
+  // LIMPIAR CAMPOS
+  formulario.reset();
+
+});
+
+</script>
+
+</body>
+</html>

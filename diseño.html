@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desarrollo Web</title>
+
+  <style>
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+background:#10001C;
+color:white;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI', sans-serif;
+scroll-behavior:smooth;
+}
+    nav{
+      position:fixed;
+      top:0;
+      width:100%;
+      padding:18px;
+      display:flex;
+      justify-content:center;
+      gap:30px;
+      background:rgba(15,23,42,0.9);
+	background: #10001C;
+      backdrop-filter:blur(10px);
+      z-index:1000;
+      box-shadow:0 4px 15px rgba(0,0,0,0.25);
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#130017;
+    }
+    section{
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:120px 20px;
+    }
+    .hero{
+      background:
+      linear-gradient(rgba(15,23,42,0.75),rgba(15,23,42,0.75)),
+      url('https://i.pinimg.com/736x/bd/85/9f/bd859f9b54f46c28f6ce45514db3be27.jpg');
+      background-size:cover;
+      background-position:center;
+    }
+    .card{
+      width:90%;
+      max-width:1050px;
+      background:#1a002e;
+      border-radius:25px;
+      padding:45px;
+      overflow:hidden;
+      text-align:center;
+      box-shadow:0 10px 35px rgba(0,0,0,0.3);
+      animation:fade 1s ease;
+    }
+    h1{
+      font-size:3.2rem;
+      margin-bottom:20px;
+      color:#FFFFFF;
+    }
+
+    h2{
+      font-size:2rem;
+      margin-bottom:20px;
+      color:#FFFFFF;
+    }
+h3
+{
+	text-align: center;
+      	color:#FFFFFF;
+}
+
+    p{
+      line-height:1.8;
+      margin-bottom:25px;
+      color:#FFFFFF;
+    }
+.btn-regresar{
+  display:inline-block;
+  margin-top:25px;
+  padding:12px 25px;
+  background:#c000ff;
+  color:white;
+  text-decoration:none;
+  border-radius:30px;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.btn-regresar:hover{
+  background:#e100ff;
+  transform:scale(1.05);
+}    .contenedor{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:25px;
+      margin-top:25px;
+    }
+img
+{
+  width:600 px;
+  height:auto;
+}
+
+    .box{
+      width:280px;
+      background:#10001C;
+      border-radius:20px;
+      padding:25px;
+      transition:0.3s;
+      box-shadow:0 5px 15px rgba(0,0,0,0.25);
+    }
+    .box img{
+      width:100%;
+      border-radius:15px;
+      margin-bottom:15px;
+    }
+
+    .box h3
+{
+      color:#10001C;
+      margin-bottom:12px;
+}
+      input, textarea
+{
+      width:100%;
+      padding:14px;
+      margin-top:12px;
+      border:none;
+      border-radius:12px;
+      background:#10001C;
+      color:white;
+      outline:none;
+    }
+
+    textarea{
+      resize:none;
+      height:120px;
+    }
+
+
+  </style>
+</head>
+<body>
+       
+<section id="servicios">
+  <div class="card">
+    <h1>Diseños en HTML</h1>
+    <div class="contenedor">
+        <div class="box">
+           <img src="https://cdn.melhoreshospedagem.com/wp/wp-content/uploads/2020/12/o-que-e-html-e-como-ele-funciona-1000x563.jpg">
+          <p>
+            Interfaces atractivas y fáciles de usar.
+          </p>
+<ul>
+  <li>Diseño responsive</li>
+  <li>Diseño moderno</li>
+  <li>Diseño minimalista</li>
+  <li>Diseño interactivo</li>
+</ul>
+ <a href="Reckless Application Development.html" class="btn-regresar">        
+Regresar
+      </a>
+
+        </div>
+
+</body>
